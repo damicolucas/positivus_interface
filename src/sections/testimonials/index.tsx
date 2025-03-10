@@ -1,6 +1,5 @@
 'use client'
 import { SectionTitle } from "@/components/section_title";
-import { Testimonial } from "./Testimonial";
 import { Carousel } from "./Carousel";
 
 export function Testimonials() {

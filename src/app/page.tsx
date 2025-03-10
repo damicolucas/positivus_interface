@@ -1,6 +1,7 @@
 import { Team } from "@/sections/team";
 import { Hero } from "@/sections/hero";
 import { Services } from "@/sections/services";
+import { ContactUs } from "@/sections/contact_us";
 import { MakeHappen } from "@/sections/make_happen";
 import { CaseStudies } from "@/sections/case_studies";
 import { Testimonials } from "@/sections/testimonials";
@@ -16,6 +17,7 @@ export default function Home() {
         <WorkingProcess />
         <Team />
         <Testimonials />
+        <ContactUs />
     </main>
   );
 }

@@ -65,7 +65,7 @@ export function Carousel() {
             </div>
             <div className="flex items-center justify-center mt-[126px] gap-[190px]">
                 <button className="cursor-pointer" onClick={leftHandle}><img src="./arrow_left.png"/></button>
-                <div className="flex items-center justify-center gap-[19px]">{fakeEmployees.map((item, index) => <img onClick={() => setCur(index)} className="cursor-pointer" src={`./${cur === index ? 'active' : 'inactive'}_vector.png`} />)}</div>
+                <div className="flex items-center justify-center gap-[19px]">{fakeEmployees.map((item, index) => <img key={`${item.name}_${index}`} onClick={() => setCur(index)} className="cursor-pointer" src={`./${cur === index ? 'active' : 'inactive'}_vector.png`} />)}</div>
                 <button className="cursor-pointer" onClick={rightHandle}><img src="./arrow_right.png"/></button>
             </div>
         </div>
