@@ -1,3 +1,4 @@
+import { CaseStudies } from "@/sections/case_studies";
 import { Hero } from "@/sections/hero";
 import { MakeHappen } from "@/sections/make_happen";
 import { Services } from "@/sections/services";
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <Services />
         <MakeHappen />
+        <CaseStudies />
     </main>
   );
 }
