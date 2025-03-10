@@ -5,7 +5,7 @@ export function CaseStudies() {
         <section className="flex flex-col pb-[70px] pt-[100px]">
             <SectionTitle
                 title="Case Studies"
-                descrition="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+                descrition="Explore Real-Life Examples of Our Proven Digital Marketing<br/>Success through Our Case Studies"
             />
             <div className="bg-dark text-white flex items-center justify-between py-[70px] px-[60px] rounded-[45px] gap-[65px]">
                 <TextSection text="For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales." />
