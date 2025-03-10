@@ -9,10 +9,12 @@
 }
 
 @theme inline {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
   --color-main: #B9FF66;
   --color-dark: #191A23;
   --color-gray: #F3F3F3;
-
   --color-background: var(--background);
   --font-mono: var(--font-space-grotesk);
 }
