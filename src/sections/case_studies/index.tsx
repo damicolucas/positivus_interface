@@ -21,7 +21,7 @@ export function CaseStudies() {
 const TextSection = ({ text }: { text: string }) => {
     return (
         <div className="flex flex-col space-y-5">
-            <p className="text-[18px]">{text}</p>
+            <p className="text-lg">{text}</p>
             <button className="text-main flex items-center justify-start gap-4 text-[20px]">
                 <span>
                     Learn more

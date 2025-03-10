@@ -1,7 +1,8 @@
-import { CaseStudies } from "@/sections/case_studies";
+import { Team } from "@/sections/team";
 import { Hero } from "@/sections/hero";
-import { MakeHappen } from "@/sections/make_happen";
 import { Services } from "@/sections/services";
+import { MakeHappen } from "@/sections/make_happen";
+import { CaseStudies } from "@/sections/case_studies";
 import { WorkingProcess } from "@/sections/working_process";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <MakeHappen />
         <CaseStudies />
         <WorkingProcess />
+        <Team />
     </main>
   );
 }
