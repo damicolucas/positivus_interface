@@ -17,14 +17,16 @@ export function Card({ title, imgSrc, theme }: CardProps) {
                     <span className={`text-dark ${theme === 'main' || theme === 'dark' ? 'bg-gray' : 'bg-main'} text-3xl leading-none font-medium rounded-[7px] p-[7px]`}>{first_part}</span>
                     <span className={`text-dark ${theme === 'main' || theme === 'dark' ? 'bg-gray' : 'bg-main'} text-3xl leading-none font-medium rounded-[7px] p-[7px]`}>{second_part}</span>
                 </div>
+                <img draggable="false" src={imgSrc} alt="card image" className="md:hidden object-contain" />
+
                 <button className="text-[20px] leading-7 flex items-center justify-start gap-[15px]">
-                    <img src={iconSrc} alt="" />
+                    <img draggable="false" src={iconSrc} alt="" />
                     <span className={`${theme === 'dark' ? 'text-gray' : 'text-dark'}`}>
                         Learn more
                     </span>
                 </button>
             </div>
-            <img src={imgSrc} alt="card image" />
+            <img draggable="false" src={imgSrc} alt="card image" className="hidden md:flex object-contain" />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Testimonial } from "./Testimonial";
+import { MobileTestimonial, Testimonial } from "./Testimonial";
 
 const fakeEmployees = [
     {
@@ -52,7 +52,7 @@ export function Carousel() {
 
     return (
         <div className="flex flex-col">
-            <div className="flex justify-between items-center gap-[50px]">
+            <div className="hidden md:flex justify-between items-center gap-[50px]">
                 {fakeEmployees.map((item, index) => {
                     return (
                         <div key={item.name} className="flex justify-between items-center">
@@ -63,10 +63,15 @@ export function Carousel() {
                     );
                 })}
             </div>
-            <div className="flex items-center justify-center mt-[126px] gap-[190px]">
-                <button className="cursor-pointer" onClick={leftHandle}><img src="./arrow_left.png"/></button>
-                <div className="flex items-center justify-center gap-[19px]">{fakeEmployees.map((item, index) => <img key={`${item.name}_${index}`} onClick={() => setCur(index)} className="cursor-pointer" src={`./${cur === index ? 'active' : 'inactive'}_vector.png`} />)}</div>
-                <button className="cursor-pointer" onClick={rightHandle}><img src="./arrow_right.png"/></button>
+            <div className="md:hidden flex justify-between items-center gap-[50px]">
+                {fakeEmployees.map((item, index) => {
+                    return cur === index && <MobileTestimonial key={item.name} name={item.name} position={item.position} testimonial={item.testimonial} />
+                })}
+            </div>
+            <div className="hidden md:flex items-center justify-center mt-[126px] gap-[190px]">
+                <button className="cursor-pointer" onClick={leftHandle}><img draggable="false" src="./arrow_left.png" /></button>
+                <div className="flex items-center justify-center gap-[19px]">{fakeEmployees.map((item, index) => <img draggable="false" key={`${item.name}_${index}`} onClick={() => setCur(index)} className="cursor-pointer" src={`./${cur === index ? 'active' : 'inactive'}_vector.png`} />)}</div>
+                <button className="cursor-pointer" onClick={rightHandle}><img draggable="false" src="./arrow_right.png" /></button>
             </div>
         </div>
     );

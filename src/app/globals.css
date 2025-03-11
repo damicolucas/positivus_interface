@@ -23,5 +23,8 @@ body {
   background: var(--background);
   color: #000000;
   font-family: var(--font-space-grotesk);
-  padding: 60px 100px 0px 100px;
+  padding: 40px 50px 0px 50px;
+  @media (min-width: 768px) {
+    padding: 60px 100px 0px 100px;
+  }
 }

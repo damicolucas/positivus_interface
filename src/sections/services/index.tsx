@@ -5,7 +5,7 @@ export function Services () {
     return (
         <section className="py-[70px]">
             <SectionTitle title="Services" descrition="At our digital marketing agency, we offer a range of services to<br/>help businesses grow and succeed online. These services include:"/>
-            <div className="grid grid-cols-2 gap-[40px] rounded-[45px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] rounded-[45px]">
                 <Card imgSrc="./cards/seo.png" theme="gray" title="Search engine | optimization"/>
                 <Card imgSrc="./cards/click.png" theme="main" title="Pay-per-click | advertising"/>
                 <Card imgSrc="./cards/social.png" theme="dark" title="Social Media | Marketing"/>
