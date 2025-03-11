@@ -1,9 +1,10 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Space_Grotesk } from 'next/font/google'
 
-import "./globals.css";
+import { Footer } from "@/components/footer";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -31,8 +32,8 @@ export default function RootLayout({
 
         {children}
 
-        <footer className="">
-
+        <footer>
+          <Footer />
         </footer>
       </body>
     </html>

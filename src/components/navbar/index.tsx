@@ -1,11 +1,11 @@
 export function Navbar() {
     return (
-        <nav className="flex justify-between">
+        <nav className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-[12px]">
                 <img alt="logo-positivus" src="/logo_vector.png" />
                 <img alt="logo-positivus" src="/positivus.png" />
             </div>
-            <ul className="flex gap-[40px] text-xl justify-center items-center">
+            <ul className="flex gap-[40px] text-xl justify-center items-center cursor-pointer">
                 <li>About us</li>
                 <li>Services</li>
                 <li>Use Cases</li>
